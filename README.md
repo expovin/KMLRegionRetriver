@@ -2,6 +2,7 @@
 Package v.0.1
 
 GENERAL DESCRIPTION
+
 KMLRetriveRegion (KRR in short) is a PythonRESTServer module in charge of return a region  belonging to certain geographical coordinates (latitude, longitude). The regions are defined by the KML file. All KML file to use need to be copied into a KMLFile folder. KRR will load them while at PRS startup or invoking the reload method.
 KRR use two different algorithms to determine whether a certain point is within a specific region, one fast and imprecise and one slower and more reliable. The first algorithm is based on the hypothesis that the necessary, but not sufficient condition which a certain point belong to a specific region, require that point need to be between the northern and the southern point and between the western and the eastern point of the region. When this algorithm return just one region for a specific point, that point cannot belong to other regions, so the result is reliable. When that algorithm return more that one region (point close to the border), then the second algorithm is invoked. The second algorithm is based on a standard method to find out whether or not a point belong to a polygon.
 
@@ -24,6 +25,7 @@ doReload : force the reload for the KML Files
 You can find a full description for each method in the online documentation.
 
 UTILITY
+
 parseCSVforCoords.py : Parse an imput file to retrive the Longitude and Latitude info
 
 
