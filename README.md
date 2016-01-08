@@ -32,11 +32,16 @@ parseCSVforCoords.py : Parse an imput file to retrive the Longitude and Latitude
 INSTALLATION
 
 You have two different way to install this Module, both using the importModule utility
+
   1) Download the project zip file and move it to a temp path. From the RESTServer main folder locate the importModule utility and use it typing: python importModule.py -f <ModuleFile.zip>
 
   2) If the RESTServer can access directly to the internet you can avoid to download the Module project and live the importModule utility do it for you, typing: python importModule.py -w KMLRegionRetriver
 
 To uninstall the module use the deleteModule.py utility from PRS.
+
+HOW TO USE IT
+
+You can call the Methods using the GET/POST call from any langiage or you can use the script capability to build batch command.
 
 KNOW LIMITATION AND ISSUES
 
