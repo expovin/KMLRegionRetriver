@@ -16,6 +16,7 @@ import KMLRegionRetriver
 #log=config.Log
 p = getRegionInfo.getRegionInfo()
 
+# TODO : Implement a script utility in order to call all methods via command line
 
 '''
     RESTServer
@@ -57,6 +58,8 @@ class getRegionfromCoords(tornado.web.RequestHandler):
             'Regions':p.getRegionFromCoords(fileName,coords)
         }
         self.write(response)
+
+# TODO : Implement methods getRegionsFromCoords to return for each point regions from all KMLFile
 
 '''
      POST:getReagionFromCoordsMulti - /getReagionFromCoordsMulti - JSON

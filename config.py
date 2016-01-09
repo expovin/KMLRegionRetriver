@@ -5,7 +5,7 @@ import os
 class Info():
     author='Vincenzo Esposito'
     contact='ves@qlik.com'
-    version='1.0'
+    version='0.7'
     build='22/12/2015'
 
 class FilePath():

@@ -4,7 +4,9 @@ import http.client
 
 url = 'localhost:8880'
 
-
+# TODO: Implement a fixed length reading method
+# TODO: Implement a position read methods
+# TODO: Implement a JSON to CSV converter method
 
 '''
     defCoordsByRegExp [invert]

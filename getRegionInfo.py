@@ -131,10 +131,18 @@ class getRegionInfo:
         KML= getRegionInfo()
         Regions=KML.getRegionSquarefromCoords(fileName,Coords)
 
+        # No Region Found, return N/A
+        if(not Regions):
+            rc = {Coords:{fileName:'N/A'}}
+            return rc
+
+        # Found just one region, so no need to refine further, return the region found
         if(not Regions[1:]):
             rc = {Coords:{fileName:Regions[0]}}
             self.cash.update(rc)
             return rc
+
+        # Found more than one Region, need to refine using the second algorithm
         else:
             result={}
             for r in Regions:

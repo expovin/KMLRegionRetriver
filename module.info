@@ -1,7 +1,7 @@
 {
     'Name':'KMLRegionRetriver',
-	'Prefix':'RR',
-	'Version':'1.0',
+	'Prefix':'KRR',
+	'Version':'0.2',
 	'Author':'ves',
-	'Last Build':'30/12/2015'	
+	'Last Build':'10/01/2016'
 }
